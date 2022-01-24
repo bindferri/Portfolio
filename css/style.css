@@ -1,0 +1,50 @@
+html{
+    font-size: 10px;
+}
+
+* , *::after , *::before{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Inter , Arial, Helvetica, sans-serif;
+    font-size: 2.4rem;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: red;*/
+    justify-content: space-between;
+    padding: 0 15rem;
+}
+
+.navbar__menu{
+    display: flex;
+    list-style: none;
+    align-self: center;
+}
+
+.navbar__menu li{
+    margin-left: 5rem;
+    color: black;
+    font-size: 1.6rem;
+    /*background-color: red;*/
+}
+
+.navbar__menu li:hover{
+    transform: translateY(-0.3rem);
+    transition: transform 0.5s;
+}
+
+.navbar > img{
+    height: 12rem;
+}
