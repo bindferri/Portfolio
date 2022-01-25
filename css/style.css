@@ -1,5 +1,6 @@
 html{
     font-size: 10px;
+    scroll-behavior: smooth;
 }
 
 * , *::after , *::before{
@@ -71,3 +72,75 @@ a{
 .hero__link:hover{
     border-bottom: 1px rgb(17, 204, 158) solid;
 }
+
+/* About Me */
+
+.section__header{
+    display: flex;
+    justify-content: center;
+    font-weight: 300;
+}
+
+.about-me__content{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about-me__content--img{
+    padding-left: 25rem;
+    margin-top: 9rem;
+}
+
+.about-me__content--text > p{
+    margin: 2.5rem 40rem 0 0;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.about-me__content--text > h3{
+    margin: 0;
+}
+
+.about-me__content--text > h4{
+    margin-bottom: 2rem;
+}
+
+.github{
+    color: rgb(17, 204, 158);
+}
+
+.github:hover{
+    color: rgb(17, 204, 158);
+}
+
+.about-me__content--list{
+    list-style: none;
+    padding: 0;
+    font-size: 1.8rem;
+    line-height: 5rem;
+}
+
+.footer{
+    height: 10rem;
+    background-color: rgb(29, 29, 29) ;
+}
+
+.footer__content{
+    color: #f3f3f3;
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center{
+    justify-content: center;
+    padding: 0;
+}
+
+.center > li{
+    margin: 0;
+    padding: 1rem;
+}
+
