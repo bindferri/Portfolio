@@ -136,11 +136,10 @@ a{
 
 .center{
     justify-content: center;
-    padding: 0;
+    padding-left: 0;
 }
 
 .center > li{
     margin: 0;
     padding: 1rem;
 }
-
