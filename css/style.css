@@ -27,6 +27,15 @@ a{
     padding: 0 15rem;
 }
 
+.secondary{
+    background-color: white;
+}
+
+.test{
+    padding: 0 15rem;
+    margin-top: -2rem;
+}
+
 .navbar__menu{
     display: flex;
     list-style: none;
@@ -45,7 +54,7 @@ a{
     transition: transform 0.5s;
 }
 
-.navbar > img{
+.navbar img{
     height: 12rem;
 }
 
@@ -210,3 +219,25 @@ a{
     font-size: 1.4rem;
 }
 
+
+/* SINGLE PROJECT */
+
+.single-content{
+    text-align: center;
+    width: 141rem;
+    margin: 10rem auto 0;
+}
+
+.single-content__img--primary{
+    height: 60vh;
+    width: 100%;
+}
+
+.single-content__text{
+    max-width: 114rem;
+    margin: 0 auto;
+}
+
+.single-content__img{
+    width: 114rem;
+}
