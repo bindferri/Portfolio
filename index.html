@@ -17,7 +17,7 @@
         <ul class="navbar__menu">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="">Log In</a></li>
+            <li><a class="open-overlay" href="">Log In</a></li>
         </ul>
     </nav>
 </header>
@@ -239,5 +239,20 @@
     </div>
 </footer>
 
+<div class="login hidden">
+    <button class="close-login">&times;</button>
+    <h2 class="login__heading">Do You Have An Account?</h2>
+    <form action="" method="post" class="login__form">
+        <label>Username: </label>
+        <input type="text">
+        <label>Password: </label>
+        <input type="password">
+        <button class="login__btn">Log In</button>
+    </form>
+    <a href="#" class="login__register">Register</a>
+</div>
+<div class="overlay hidden"></div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
