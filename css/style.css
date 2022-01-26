@@ -121,6 +121,8 @@ a{
     line-height: 5rem;
 }
 
+/* Footer */
+
 .footer{
     height: 10rem;
     background-color: rgb(29, 29, 29) ;
@@ -137,9 +139,74 @@ a{
 .center{
     justify-content: center;
     padding-left: 0;
+    margin-top: 0;
 }
 
 .center > li{
     margin: 0;
     padding: 1rem;
 }
+
+/* PROJECTS */
+
+.projects{
+    margin-top: 10rem;
+
+    background-color: rgb(229, 229, 229);
+}
+
+.section__header{
+    padding-top: 8rem;
+    margin-bottom: 15rem;
+}
+
+.projects__content{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 15rem;
+}
+
+.card{
+    height: 30rem;
+    width: 30rem;
+    margin-bottom: 10rem;
+}
+
+.card__img{
+    text-align: center;
+    background-color: #000000;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+}
+
+.card__img > img{
+    height: 20rem;
+    max-width: 100%;
+}
+
+.card__excerpt{
+    text-align: center;
+}
+
+.card__excerpt{
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    height: 10rem;
+    background-color: rgb(29, 29, 29);
+}
+
+.card__excerpt > h4,.card__excerpt a{
+    margin: 0;
+    font-weight: 500;
+    font-size: 2.2rem;
+    color: #f3f3f3;
+    padding-top: 1.5rem;
+}
+
+.card__excerpt p{
+    color: #f3f3f3;
+    font-size: 1.4rem;
+}
+
