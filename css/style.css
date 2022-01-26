@@ -31,11 +31,6 @@ a{
     background-color: white;
 }
 
-.test{
-    padding: 0 15rem;
-    margin-top: -2rem;
-}
-
 .navbar__menu{
     display: flex;
     list-style: none;
@@ -60,22 +55,35 @@ a{
 
 /* HERO */
 
+.hero{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #141414;
+}
+
 .hero__picture > img{
-    height: 100vh;
-    width: 100%;
+    height: 100rem;
+}
+
+.hero__text--heading{
+    color: rgb(17, 204, 158);
+    font-size: 4.5rem;
 }
 
 .hero__text{
-    position: absolute;
-    top: 50rem;
-    left: 18rem;
-    line-height: 5rem;
-    color: #f3f3f3;
+    justify-self: center;
+    align-self: center;
 }
 
 .hero__link{
-    color: rgb(17, 204, 158);
+    color: white;
     font-size: 1.8rem;
+    background-color: rgb(17, 204, 158);
+    opacity: 0.8;
+}
+
+.hero__link:hover{
+    opacity: 1;
 }
 
 .hero__link:hover{
@@ -85,9 +93,11 @@ a{
 /* About Me */
 
 .section__header{
+    margin-top: 0;
     display: flex;
     justify-content: center;
-    font-weight: 300;
+    font-weight: 700;
+    color: #141414;
 }
 
 .about-me__content{
@@ -158,66 +168,66 @@ a{
 
 /* PROJECTS */
 
-.projects{
-    margin-top: 10rem;
-
-    background-color: rgb(229, 229, 229);
+.projects__heading{
+    color: rgb(68, 68, 68);
 }
 
-.section__header{
-    padding-top: 8rem;
-    margin-bottom: 15rem;
-}
-
-.projects__content{
-    margin-top: 1rem;
+.projects2{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    margin: 0 12rem;
+}
+
+.projects2__img{
+    width: 100%;
+}
+
+.projects2__content{
+    justify-self: center;
+    align-self: center;
+    width: 70%;
+}
+
+.projects2__content > p{
+    font-size: 1.6rem;
+}
+
+.projects2__content > a{
+    font-size: 1.6rem;
+    text-decoration: underline;
+}
+
+.orange{
+    color: orange;
+}
+
+.aqua{
+    color: aqua;
+}
+
+.grey{
+    color: gray;
+}
+
+.red{
+    color: indianred;
+}
+
+.projects1{
+    background-color: white;
+    padding-bottom: 10rem;
+}
+
+.projects1__header{
+    color: rgb(17, 204, 158);
+    margin-top: 0;
+    display: flex;
     justify-content: center;
-    grid-gap: 15rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
-.card{
-    height: 30rem;
-    width: 30rem;
-    margin-bottom: 10rem;
-}
-
-.card__img{
-    text-align: center;
-    background-color: #000000;
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-}
-
-.card__img > img{
-    height: 20rem;
-    max-width: 100%;
-}
-
-.card__excerpt{
-    text-align: center;
-}
-
-.card__excerpt{
-    border-bottom-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-    height: 10rem;
-    background-color: rgb(29, 29, 29);
-}
-
-.card__excerpt > h4,.card__excerpt a{
-    margin: 0;
-    font-weight: 500;
-    font-size: 2.2rem;
-    color: #f3f3f3;
-    padding-top: 1.5rem;
-}
-
-.card__excerpt p{
-    color: #f3f3f3;
-    font-size: 1.4rem;
-}
 
 
 /* SINGLE PROJECT */
@@ -245,7 +255,15 @@ a{
 /* Login Form */
 
 .hidden{
-    display: none;
+    visibility: hidden;
+}
+
+.btn{
+    font-size: 1.8rem;
+    padding: 1.5rem 3vw;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
 }
 
 .overlay{
@@ -265,14 +283,16 @@ a{
     transform: translate(-50%, -50%);
     height: 50rem;
     width: 50rem;
-    background-color: #f3f3f3;
+    background-color: #141414;
     z-index: 999;
+    color: rgb(17, 204, 158);
 }
 
 .login__heading{
     font-size: 2.2rem;
     text-align: center;
     margin-top: 5rem;
+    color: rgb(17, 204, 158);
 }
 
 .login__form{
@@ -284,13 +304,8 @@ a{
     margin-top: 2rem;
     margin-left: 5rem;
     display: block;
-    padding: 1.5rem 3vw;
-    border-radius: 40px;
-    border: none;
-    background-color: orange;
-    font-size: 1.8rem;
+    background-color: rgb(17, 204, 158);
     justify-self: center;
-    cursor: pointer;
 }
 
 .login input{
@@ -303,6 +318,7 @@ a{
     font-size: 1.5rem;
     text-decoration: underline orange;
     text-underline-offset: 3px;
+    color: rgb(17, 204, 158);
 }
 
 .close-login{
@@ -314,3 +330,35 @@ a{
     right: 1rem;
     cursor: pointer;
 }
+
+/* Knowledge */
+
+.knowledge{
+    background-color: #f3f3f3;
+    padding-bottom: 10rem;
+}
+
+.languages{
+    height: 20rem;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem;
+    align-content: center;
+}
+
+.knowledge-heading{
+    color: #141414;
+}
+
+/* Admin */
+
+.side-navbar{
+    background-color: black;
+    height: 100vh;
+    width: 25%;
+    margin-left: 15rem;
+    margin-top: -2.5rem;
+}
+
+
+
