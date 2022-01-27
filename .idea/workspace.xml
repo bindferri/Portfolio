@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="Log In Form">
-      <change afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="Admin Dashboard Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/universiteti-prishtines" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -51,7 +49,8 @@
       <updated>1643046912713</updated>
       <workItem from="1643046913763" duration="13225000" />
       <workItem from="1643127886465" duration="12864000" />
-      <workItem from="1643206362272" duration="8664000" />
+      <workItem from="1643206362272" duration="25626000" />
+      <workItem from="1643295455212" duration="321000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar">
       <created>1643059334699</created>
@@ -102,7 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643208386013</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Log In Form">
+      <created>1643217722836</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643217722836</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Improvements in Hero and sections">
+      <created>1643239587444</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1643239587444</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,21 +129,23 @@
     <MESSAGE value="Projects Section Commit" />
     <MESSAGE value="Single Project Page Commit" />
     <MESSAGE value="Log In Form" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log In Form" />
+    <MESSAGE value="Improvements in Hero and sections" />
+    <MESSAGE value="Admin Dashboard Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Dashboard Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643058289257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058289257" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1643217713639">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1643239587059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643217713639" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643213074212">
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643239587059" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643223440130">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643213074212" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643223440130" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1643058417201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -139,14 +154,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058425026" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643208306540">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643239592344">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643208306540" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1643206599342">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643239592344" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1643243114798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643206599342" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643243114798" />
     <state x="765" y="206" key="svn.repositoryBrowser" timestamp="1643058369729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

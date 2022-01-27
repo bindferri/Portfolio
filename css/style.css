@@ -352,13 +352,112 @@ a{
 
 /* Admin */
 
-.side-navbar{
-    background-color: black;
-    height: 100vh;
-    width: 25%;
-    margin-left: 15rem;
-    margin-top: -2.5rem;
+.menu{
+
+    background-color: #111827;
+    width: 30rem;
+    min-height: 100vh;
 }
 
+.items{
+    margin-top: 4rem;
+    font-size: 1.6rem;
+}
 
+.items li{
+    list-style: none;
+    padding: 1.5rem 0;
+    transition: 0.3s ease;
+}
+
+.items li:nth-child(1){
+    border-left: 0.4rem solid #fff;
+}
+
+.items li:hover{
+    background-color: #253047;
+    cursor: pointer;
+}
+
+.items li:hover i,.items li:hover a{
+    color: #F3F4F6;
+}
+
+.items li i{
+    color: rgb(134,141,151);
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 1rem 0 2.5rem;
+}
+
+.items li a{
+    text-decoration: none;
+    color: rgb(134,141,151);
+    font-weight: 300;
+    transition: 0.3s ease;
+}
+
+.admin-content{
+    width: calc(100% - 30rem);
+}
+
+.container{
+    margin-top: -1.3rem;
+    display: flex;
+}
+
+.admin__heading{
+    color: #444a53;
+    padding: 3rem 3rem 0 3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.admin-card{
+    padding: 3rem 3rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.admin-card .admin-car__icon{
+    background: #fff;
+    width: 23.5rem;
+    padding: 1.6rem 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.admin-card .admin-car__icon i{
+    font-size: 2.5rem;
+    width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    background: chartreuse;
+    margin-right: 1.5rem;
+}
+
+.admin-card .admin-car__icon h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.admin-card .admin-car__icon span{
+    font-size: 1.5rem;
+    color: #828997;
+}
+
+.items ul{
+    padding: 0;
+}
 
