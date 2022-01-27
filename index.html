@@ -8,6 +8,7 @@
     <title>Bind Ferri - Minimalist Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
 </head>
 <body>
 
@@ -17,6 +18,7 @@
         <ul class="navbar__menu">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a class="open-overlay" href="">Log In</a></li>
         </ul>
     </nav>
@@ -27,6 +29,7 @@
     <div class="hero__text">
         <h5 class="hero__text--heading">BIND FERRI <br> FULL STACK DEVELOPER</h5>
         <a href="#projects"><button class="btn hero__link">Check out my work</button></a>
+        <a href="img/CV-BIND_FERRI.pdf" download="CV"><button class="btn hero__link">Download CV</button></a>
     </div>
     <picture class="hero__picture">
         <!--        <source type="image/webp" srcset="img/hero.webp">-->
@@ -96,6 +99,56 @@
         <img src="img/php.png" alt="">
         <img src="img/wordpress.png" alt="">
         <img src="img/java.png" alt="">
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="contact__heading">Contact Me</h2>
+    <p class="contact__heading--p">&#8212;<span class="contact-p__color">get in touch</span>&#8212;</p>
+
+    <div class="contact-form">
+        <div class="contact-info">
+            <div class="contact-info__text">
+                <h4>Get in Touch</h4>
+                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam qui quis ullam velit, voluptas voluptates.
+                    Ipsam qui quis ullam velit, voluptas voluptates.</span></p>
+            </div>
+
+            <div class="contact-info__info">
+                <i class="fas fa-user-alt"></i>
+                <div class="contact-info__card">
+                    <h5>Name</h5>
+                    <p>Bind Ferri</p>
+                </div>
+            </div>
+
+            <div class="contact-info__info">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="contact-info__card">
+                    <h5>Adress</h5>
+                    <p>Prishtine,Kosove</p>
+                </div>
+            </div>
+
+            <div class="contact-info__info">
+                <i class="fas fa-envelope"></i>
+                <div class="contact-info__card">
+                    <h5>Email</h5>
+                    <p>bindferri@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="form-contact">
+            <h4>Message me</h4>
+            <div class="contact-input">
+                <input type="text" name="contact_name" placeholder="Name">
+                <input type="email" name="contact_email" placeholder="Email">
+            </div>
+            <input type="text" name="contact_subject" placeholder="Subject">
+            <textarea name="contact_message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="btn form-contact__btn">Send Message</button>
+        </form>
     </div>
 </section>
 

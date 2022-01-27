@@ -25,7 +25,7 @@
 </header>
 
 <div class="container">
-<section class="menu">
+ <section class="menu">
     <div class="items">
         <ul>
         <li><i class="fas fa-chart-pie"></i><a href="#">Dashboard</a></li>
@@ -35,9 +35,9 @@
         <li><i class="fas fa-language"></i><a href="#">Programming Languages</a></li>
         </ul>
     </div>
-</section>
+ </section>
 
-<section class="admin-content">
+ <section class="admin-content">
     <h3 class="admin__heading">Dashboard</h3>
 
     <div class="admin-card">
@@ -77,10 +77,54 @@
                 <span>P.L. Created</span>
             </div>
         </div>
+
+        <div class="admin-car__icon">
+            <i class="fas fa-address-book"></i>
+
+            <div class="admin-card__text">
+                <h3>8,267</h3>
+                <span>Contact Created</span>
+            </div>
+        </div>
     </div>
-</section>
+
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+     <script type="text/javascript">
+         google.charts.load('current', {'packages':['bar']});
+         google.charts.setOnLoadCallback(drawChart);
+
+         function drawChart() {
+             var data = google.visualization.arrayToDataTable([
+                 ['Data', 'Items'],
+                 ["Hero", 44],
+                 ["Projects", 31],
+                 ["About Me", 12],
+                 ["Programming Languages", 10],
+                 ['Contact', 3]
+
+                 // ['Posts', 1000],
+
+             ]);
+
+             var options = {
+                 chart: {
+                     title: 'Activity',
+                     subtitle: '',
+                 }
+             };
+
+             var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+             chart.draw(data, google.charts.Bar.convertOptions(options));
+         }
+     </script>
+     <div id="columnchart_material" class="chart"></div>
+
+ </section>
 </div>
 
+
+</body>
 <footer class="footer">
     <div class="footer__social-media">
         <ul class="navbar__menu center">

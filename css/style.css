@@ -25,6 +25,7 @@ a{
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 15rem;
+    align-items: center;
 }
 
 .secondary{
@@ -32,9 +33,9 @@ a{
 }
 
 .navbar__menu{
+    height: 100%;
     display: flex;
     list-style: none;
-    align-self: center;
 }
 
 .navbar__menu li{
@@ -143,16 +144,19 @@ a{
 /* Footer */
 
 .footer{
-    height: 10rem;
+    height: 30rem;
     background-color: rgb(29, 29, 29) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__content{
     color: #f3f3f3;
     font-size: 1.4rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .center{
@@ -350,10 +354,120 @@ a{
     color: #141414;
 }
 
+/* Contact */
+
+.contact{
+    padding-bottom: 5rem;
+    padding-top: 1rem;
+    background-color: white;
+}
+
+.contact-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contact__heading{
+    color: #141414;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.contact__heading--p{
+    text-align: center;
+    margin-top: 1rem;
+    color: black;
+}
+
+.contact-p__color{
+    color: crimson;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    flex: 50%;
+    padding-right: 15rem;
+    row-gap: 2rem;
+}
+
+.form-contact input,.form-contact textarea,.login__form input{
+    padding: 1rem 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 0.6rem;
+    outline: none;
+    font-size: 1.7rem;
+    resize: none;
+}
+
+.contact-input{
+    display: flex;
+    gap: 2rem;
+}
+
+.contact-input input{
+    flex-grow: 1;
+}
+
+.contact-info{
+    flex: 50%;
+    padding-left: 15rem;
+    padding-right: 5rem;
+}
+
+.contact-info__info{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50rem;
+    height: 10rem;
+}
+
+.contact-info__text p{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    max-width: 90%;
+}
+
+.contact-info__text h4{
+    color: crimson;
+}
+
+.contact-info__info i{
+    align-self: center;
+    color: crimson;
+}
+
+.contact-info__card{
+    align-self: center;
+    margin-left: 2rem;
+}
+
+.contact-info__card > h5{
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+.contact-info__card > p{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    margin-bottom: 0;
+}
+
+.form-contact__btn{
+    width: 25rem;
+    margin: 0 auto;
+    background-color: crimson;
+    color: white;
+}
+
+.form-contact__btn:hover{
+    opacity: 0.8;
+}
+
 /* Admin */
 
 .menu{
-
     background-color: #111827;
     width: 30rem;
     min-height: 100vh;
@@ -417,7 +531,7 @@ a{
 }
 
 .admin-card{
-    padding: 3rem 3rem 0 3rem;
+    padding: 3rem 5rem 0 5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -461,3 +575,14 @@ a{
     padding: 0;
 }
 
+.activity tr,.activity td,.activity th{
+    border: 1px solid red;
+    border-collapse: collapse;
+}
+
+.chart{
+    margin: 0 auto;
+    margin-top: 25rem;
+    height: 50rem;
+    width: 100%;
+}
