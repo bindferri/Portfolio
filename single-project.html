@@ -11,9 +11,7 @@
     <nav class="navbar secondary">
         <img src="img/logo-2.png" alt="">
         <ul class="navbar__menu">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="">Log In</a></li>
+            <li><a class="open-overlay visible" href="">Log In</a></li>
         </ul>
     </nav>
     <div class="test">
@@ -22,7 +20,7 @@
 </header>
 
 <section class="single-content">
-    <img class="single-content__img--primary" src="img/omnifood-sc.png" alt="">
+    <img class="single-content__img--primary" src="img/omnifood.png" alt="">
     <h1>Omni Food Project</h1>
     <p class="single-content__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda, dolore exercitationem expedita fugiat
         inventore magni perferendis placeat possimus repudiandae sapiente sed sequi velit? Blanditiis eligendi illum iusto numquam
@@ -30,18 +28,29 @@
         porro tempora veritatis, voluptas voluptate. Ad consequatur deserunt fugit quibusdam quod vel voluptatibus.</span><span>
         Deserunt eligendi eos excepturi minima neque ratione, sed voluptatibus voluptatum? Fugit
         magnam minima perspiciatis recusandae! Aliquam aspernatur assumenda corporis ducimus eveniet, excepturi id
-        mollitia neque numquam quod sed sequi veniam.</span></p>
-
-    <img class="single-content__img" src="img/omnifood-sc2.png" alt="">
-
-    <p class="single-content__text"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, assumenda, dolore exercitationem expedita fugiat
-        inventore magni perferendis placeat possimus repudiandae sapiente sed sequi velit? Blanditiis eligendi illum iusto numquam
-        quisquam.</span><span>Delectus magni numquam quod ut velit. Amet, deleniti ea enim ex facilis fugit itaque iusto nulla placeat
+        mollitia neque numquam quod sed sequi veniam.</span><span>Delectus magni numquam quod ut velit. Amet, deleniti ea enim ex facilis fugit itaque iusto nulla placeat
         porro tempora veritatis, voluptas voluptate. Ad consequatur deserunt fugit quibusdam quod vel voluptatibus.</span><span>
         Deserunt eligendi eos excepturi minima neque ratione, sed voluptatibus voluptatum? Fugit
         magnam minima perspiciatis recusandae! Aliquam aspernatur assumenda corporis ducimus eveniet, excepturi id
-        mollitia neque numquam quod sed sequi veniam.</span></p
+        mollitia neque numquam quod sed sequi veniam.</span><span>Delectus magni numquam quod ut velit. Amet, deleniti ea enim ex facilis fugit itaque iusto nulla placeat
+        porro tempora veritatis, voluptas voluptate. Ad consequatur deserunt fugit quibusdam quod vel voluptatibus.</span><span>
+        Deserunt eligendi eos excepturi minima neque ratione, sed voluptatibus voluptatum? Fugit
+        magnam minima perspiciatis recusandae! Aliquam aspernatur assumenda corporis ducimus eveniet, excepturi id
+        mollitia neque numquam quod sed sequi veniam.</span><span>Delectus magni numquam quod ut velit. Amet, deleniti ea enim ex facilis fugit itaque iusto nulla placeat
+        porro tempora veritatis, voluptas voluptate. Ad consequatur deserunt fugit quibusdam quod vel voluptatibus.</span><span>
+        Deserunt eligendi eos excepturi minima neque ratione, sed voluptatibus voluptatum? Fugit
+        magnam minima perspiciatis recusandae! Aliquam aspernatur assumenda corporis ducimus eveniet, excepturi id
+        mollitia neque numquam quod sed sequi veniam.</span><span>Delectus magni numquam quod ut velit. Amet, deleniti ea enim ex facilis fugit itaque iusto nulla placeat
+        porro tempora veritatis, voluptas voluptate. Ad consequatur deserunt fugit quibusdam quod vel voluptatibus.</span><span>
+        Deserunt eligendi eos excepturi minima neque ratione, sed voluptatibus voluptatum? Fugit
+        magnam minima perspiciatis recusandae! Aliquam aspernatur assumenda corporis ducimus eveniet, excepturi id
+        mollitia neque numquam quod sed sequi veniam.</span></p>
+
+    <img class="single-content__img" src="img/omnifood-sc2.png" alt="">
+    <img class="single-content__img" src="img/omnifood-sc.png" alt="">
+    <img class="single-content__img" src="img/omnifood-sc5.png" alt="">
 </section>
+
 
 <footer class="footer">
     <div class="footer__social-media">
@@ -55,5 +64,21 @@
         <p class="footer__content">2022 &copy; BIND FERRI - ALL RIGHTS RESERVED</p>
     </div>
 </footer>
+
+<div class="login hidden">
+    <button class="close-login">&times;</button>
+    <h2 class="login__heading">Do You Have An Account?</h2>
+    <form class="login__form">
+        <label>Username: </label>
+        <input type="text">
+        <label>Password: </label>
+        <input type="password">
+        <button class="btn login__btn">Log In</button>
+    </form>
+    <a href="#" class="login__register">Register</a>
+</div>
+<div class="overlay hidden"></div>
+
+<script src="js/script.js"></script>
 </body>
 </html>

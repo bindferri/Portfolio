@@ -257,6 +257,8 @@ a{
     padding: 1rem;
 }
 
+
+
 @media screen and (max-width: 425px){
     .footer{
         height: 15rem;
@@ -402,11 +404,10 @@ a{
 .single-content{
     text-align: center;
     width: 141rem;
-    margin: 10rem auto 0;
+    margin: 10rem auto 10rem;
 }
 
 .single-content__img--primary{
-    height: 60vh;
     width: 100%;
 }
 
@@ -417,7 +418,29 @@ a{
 
 .single-content__img{
     width: 114rem;
+    padding-top: 5rem;
 }
+
+.single-content h1{
+    font-size: 4rem;
+}
+
+.single-content p{
+    font-size: 1.8rem;
+    text-align: left;
+}
+
+@media screen and (max-width: 1140px){
+    .single-content{
+        width: 100%;
+        padding: 0 5rem;
+    }
+
+    .single-content__img{
+        width: 100%;
+    }
+}
+
 
 /* Login Form */
 
