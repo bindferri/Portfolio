@@ -923,10 +923,42 @@ a{
     width: 50rem;
     margin-top: 5rem;
     margin-left: 5rem;
+    flex: 0 0 35%;
 }
 
 .form--hero label{
     font-size: 1.8rem;
     margin-bottom: -1rem;
     color: crimson;
+}
+
+.admin-content__table tr:nth-child(odd){
+    background-color: crimson;
+    color: white;
+}
+
+.admin-content__table td{
+    border: 1px solid black;
+    padding: 0 2rem;
+    font-size: 1.5rem;
+}
+
+.admin-content__table tr:first-of-type{
+    height: 5rem;
+    font-size: 1.8rem;
+}
+
+.admin-content__table tr:nth-child(even){
+    background-color: white;
+}
+
+.admin-content__table{
+    border-collapse: collapse;
+    margin: 2rem;
+    flex: 0 0 55%;
+}
+
+.container-content{
+    display: flex;
+    flex-wrap: wrap;
 }
