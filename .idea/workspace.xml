@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="">
+    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="Admin Pages Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -18,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -36,7 +35,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/cms" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/ferrify" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -51,7 +50,7 @@
       <workItem from="1643046913763" duration="13225000" />
       <workItem from="1643127886465" duration="12864000" />
       <workItem from="1643206362272" duration="25626000" />
-      <workItem from="1643295455212" duration="10973000" />
+      <workItem from="1643295455212" duration="30155000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar">
       <created>1643059334699</created>
@@ -123,7 +122,28 @@
       <option name="project" value="LOCAL" />
       <updated>1643295904973</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Admin Dashboard Improvements">
+      <created>1643313983660</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1643313983660</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Images Commit">
+      <created>1643314050912</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1643314050912</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Admin Pages Commit">
+      <created>1643324158200</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1643324158200</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,25 +159,28 @@
     <MESSAGE value="Log In Form" />
     <MESSAGE value="Improvements in Hero and sections" />
     <MESSAGE value="Admin Dashboard Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin Dashboard Commit" />
+    <MESSAGE value="Admin Dashboard Improvements" />
+    <MESSAGE value="Images Commit" />
+    <MESSAGE value="Admin Pages Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Admin Pages Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643058289257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058289257" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1643295904475">
+    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1643324157788">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643295904475" />
+    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643324157788" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1643295744170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643295744170" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643308398856">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643319513433">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643308398856" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643319513433" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1643058417201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -166,10 +189,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058425026" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643295908260">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643324161825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643295908260" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643324161825" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1643243114798">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
