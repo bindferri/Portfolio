@@ -19,6 +19,7 @@ if (isset($_POST['skills_update'])) {
     $skillsImage = $_FILES['skills_image']['name'];
     $skillsImagetmp = $_FILES['skills_image']['tmp_name'];
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($skillsImage)){
         $skillsImage = $skillsData->skills_image;
     }
@@ -26,8 +27,9 @@ if (isset($_POST['skills_update'])) {
     //Checking if inputs were filled
     if (!empty($skillsName) && !empty($skillsImage)) {
 
+        //If there was a new photo , move to folder
         if ($skillsImage !== $skillsData->skills_image){
-            move_uploaded_file($skillsImagetmp,"skills_file/".$skillsImage);
+            move_uploaded_file($skillsImagetmp,"assets/skills_img/".$skillsImage);
         }
 
         //Updating hero in database

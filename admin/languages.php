@@ -14,7 +14,7 @@
     //Checking if inputs were filled
     if (!empty($skillsImage) && !empty($skillsName)) {
         //Moving file to folder
-        move_uploaded_file($skillsImageTemp,"skills_file/".$skillsImage);
+        move_uploaded_file($skillsImageTemp,"assets/skills_img/".$skillsImage);
 
         //Creating new skill
         $skills->createSkills($skillsName,$skillsImage);

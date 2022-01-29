@@ -22,7 +22,7 @@
 
     <div class="admin-card">
         <div class="admin-car__icon">
-        <i class="fas fa-home"></i>
+            <i class="fas fa-home"></i>
 
         <div class="admin-card__text">
             <h3><?php echo $heroCount ?></h3>

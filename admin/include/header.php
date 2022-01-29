@@ -1,4 +1,7 @@
-<?php require_once "init.php"; ?>
+<?php require_once "init.php";
+    $session = new Session();
+    $session->checkSignIn() ?  : redirect("../login.php");
+?>
 
 <!-- Header Component -->
 <!doctype html>
@@ -19,7 +22,7 @@
     <nav class="navbar">
         <img src="../img/logo-2.png" alt="">
         <ul class="navbar__menu">
-            <li><a class="open-overlay" href="">Log Out</a></li>
+            <li><a class="open-overlay" href="logout.php">Log Out</a></li>
         </ul>
     </nav>
     <div class="test">

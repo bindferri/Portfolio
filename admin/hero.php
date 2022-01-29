@@ -17,8 +17,8 @@
           //Checking if inputs were filled
           if (!empty($heroText) && !empty($heroButtonText) && !empty($heroCV) && !empty($heroPhoto)){
               //Moving files to folder
-              move_uploaded_file($heroPhototmp,"hero_files/".$heroPhoto);
-              move_uploaded_file($heroCVtmp,"hero_files/".$heroCV);
+              move_uploaded_file($heroPhototmp,"assets/hero_files/".$heroPhoto);
+              move_uploaded_file($heroCVtmp,"assets/hero_files/".$heroCV);
 
               //Creating new hero in database
               $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto);

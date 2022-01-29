@@ -25,17 +25,23 @@ if (isset($_POST['project_update'])) {
     $projectThirdPhoto = $_FILES['project_third_photo']['name'];
     $projectThirdPhototmp = $_FILES['project_third_photo']['tmp_name'];
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($projectMainPhoto)){
         $projectMainPhoto = $projectData->project_main_photo;
     }
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($projectSecondPhoto)){
+
+        //If there was a photo uploaded
         if ($projectData->project_second_photo){
             $projectSecondPhoto = $projectData->project_second_photo;
         }
     }
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($projectThirdPhoto)){
+        //If there was a photo uploaded
         if ($projectData->project_third_photo){
             $projectThirdPhoto = $projectData->project_third_photo;
         }
@@ -44,19 +50,22 @@ if (isset($_POST['project_update'])) {
     //Checking if inputs were filled
     if (!empty($projectName) && !empty($projectMainPhoto) && !empty($projectContent)) {
 
+        //If there was a new photo , move to folder
         if ($projectMainPhoto !== $projectData->project_main_photo){
-            move_uploaded_file($projectMainPhototmp,"project_files/".$projectMainPhoto);
+            move_uploaded_file($projectMainPhototmp,"assets/project_img/".$projectMainPhoto);
         }
 
+        //If there was a new photo , move to folder
         if ($projectSecondPhoto){
             if ($projectSecondPhoto !== $projectData->project_second_photo){
-                move_uploaded_file($projectSecondPhototmp,"project_files/".$projectSecondPhoto);
+                move_uploaded_file($projectSecondPhototmp,"assets/project_img/".$projectSecondPhoto);
             }
         }
 
+        //If there was a new photo , move to folder
         if ($projectThirdPhoto){
             if ($projectThirdPhoto !== $projectData->project_third_photo){
-                move_uploaded_file($projectThirdPhototmp,"project_files/".$projectThirdPhoto);
+                move_uploaded_file($projectThirdPhototmp,"assets/project_img/".$projectThirdPhoto);
             }
         }
 

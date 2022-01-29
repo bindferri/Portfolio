@@ -1,3 +1,7 @@
+<?php require_once "admin/include/init.php";
+    $hero = new Hero();
+    $heroResult = $hero->fetchSingle(45);
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -14,13 +18,13 @@
 
 <header>
     <nav class="navbar">
-        <img src="img/logo-2.png" alt="">
+        <a href="index.php"><img src="img/logo-2.png" alt=""></a>
         <i class="fas fa-bars menu_icon"></i>
         <ul class="navbar__menu">
             <li><a href="#about-me">About Me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a class="open-overlay" href="">Log In</a></li>
+            <li><a href="login.php">Log In</a></li>
         </ul>
     </nav>
 </header>
@@ -28,7 +32,7 @@
 
 <section class="hero">
     <div class="hero__text">
-        <h5 class="hero__text--heading">BIND FERRI <br> FULL STACK DEVELOPER</h5>
+        <h5 class="hero__text--heading"><?php echo $heroResult->hero_text ?></h5>
         <div class="hero__buttons">
         <a href="#projects"><button class="btn hero__link">Check out my work</button></a>
         <a href="img/CV-BIND_FERRI.pdf" download="CV"><button class="btn hero__link">Download CV</button></a>

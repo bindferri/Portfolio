@@ -9,6 +9,16 @@ class ParentClass{
         return static::$db->fetchAll();
     }
 
+    //fetching all data method
+    public function fetchSingle($id){
+        static::$db->query("SELECT * FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_id = '$id'");
+        return static::$db->fetchSingle();
+    }
+    public function fetchSingleByUsername($username){
+        static::$db->query("SELECT * FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_username = '$username'");
+        return static::$db->fetchSingle();
+    }
+
     //Counting data method
     public function countItems(){
         $count = static::$db->query("SELECT * FROM ".static::$db_tableName);

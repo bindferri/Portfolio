@@ -22,10 +22,12 @@ if (isset($_POST['hero_update'])) {
     $heroPhoto = $_FILES['hero_photo']['name'];
     $heroPhototmp = $_FILES['hero_photo']['tmp_name'];
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($heroPhoto)){
         $heroPhoto = $heroData->hero_photo;
     }
 
+    //If there is no photo selected , get the one that was uploaded
     if (empty($heroCV)){
         $heroCV = $heroData->hero_cv;
     }
@@ -33,8 +35,9 @@ if (isset($_POST['hero_update'])) {
     //Checking if inputs were filled
     if (!empty($heroText) && !empty($heroButtonText) && !empty($heroCV) && !empty($heroPhoto)) {
 
-        move_uploaded_file($heroCVtmp,"hero_files/".$heroCV);
-        move_uploaded_file($heroPhototmp,"hero_files/".$heroPhoto);
+        //If there was a new photo , move to folder
+        move_uploaded_file($heroCVtmp,"assets/hero_files/".$heroCV);
+        move_uploaded_file($heroPhototmp,"assets/hero_files/".$heroPhoto);
 
         //Updating hero in database
         $hero->updateHero($heroText,$heroButtonText,$heroCV,$heroPhoto,$id);

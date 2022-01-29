@@ -21,15 +21,15 @@
           if (!empty($projectName) && !empty($projectContent) && !empty($projectMainPhoto)){
 
               //moving photo to a temp folder
-              move_uploaded_file($projectMainPhototmp,"project_files/".$projectMainPhoto);
+              move_uploaded_file($projectMainPhototmp,"assets/project_img/".$projectMainPhoto);
 
               //checking for optional photos and moving to temp folder
               if ($projectSecondPhoto){
-                  move_uploaded_file($projectSecondPhototmp,"project_files/".$projectSecondPhoto);
+                  move_uploaded_file($projectSecondPhototmp,"assets/project_img/".$projectSecondPhoto);
               }
 
               if ($projectThirdPhoto){
-                  move_uploaded_file($projectThirdPhototmp,"project_files/".$projectThirdPhoto);
+                  move_uploaded_file($projectThirdPhototmp,"assets/project_img/".$projectThirdPhoto);
               }
 
               //Creating new project in database

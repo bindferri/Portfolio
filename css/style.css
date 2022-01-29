@@ -115,10 +115,6 @@ a{
     opacity: 1;
 }
 
-.hero__link:hover{
-    border-bottom: 1px rgb(17, 204, 158) solid;
-}
-
 @media screen and (max-width: 1444px){
     .hero__picture > img{
         height: 50rem;
@@ -967,4 +963,37 @@ a{
 .update_p{
     font-size: 1.6rem;
     margin-bottom: 0;
+}
+
+/* Register */
+
+.register {
+    padding: 10rem 0;
+}
+
+.register form{
+    width: 40rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.register form h4{
+    text-align: center;
+    color: rgb(17, 204, 158);
+}
+
+.register .form-contact__btn{
+    background-color: rgb(17, 204, 158);
+}
+
+/* Log In */
+
+.login-page{
+    padding: 25rem 0;
+}
+
+.register__fail{
+    margin: -1rem 0 0;
+    font-size: 1.4rem;
+    color: red;
 }
