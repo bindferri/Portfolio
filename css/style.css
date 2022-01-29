@@ -606,6 +606,8 @@ a{
     resize: none;
 }
 
+.form-contact input
+
 .contact-input{
     display: flex;
     gap: 2rem;
@@ -939,7 +941,7 @@ a{
 
 .admin-content__table td{
     border: 1px solid black;
-    padding: 0 2rem;
+
     font-size: 1.5rem;
 }
 
@@ -954,7 +956,6 @@ a{
 
 .admin-content__table{
     border-collapse: collapse;
-    margin: 2rem;
     flex: 0 0 55%;
 }
 
