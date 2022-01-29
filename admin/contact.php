@@ -26,7 +26,7 @@
 
 
     <section class="admin-content">
-        <h3 class="admin__heading">Hero Customize</h3>
+        <h3 class="admin__heading">Contact Customize</h3>
 
         <div class="container-content">
         <form action="" method="post" enctype="multipart/form-data" class="form-contact form--hero">
@@ -67,7 +67,7 @@
                           <td><?php echo $itemContact->contact_name ?></td>
                           <td><?php echo $itemContact->contact_address ?></td>
                           <td><?php echo $itemContact->contact_email ?></td>
-                          <td><a href="">Edit</a></td>
+                          <td><a href="edit_contact.php?id=<?php echo $itemContact->contact_id ?>">Edit</a></td>
                           <td><a href="delete_contact.php?id=<?php echo $itemContact->contact_id?>">Delete</a></td>
                       </tr>
 

@@ -71,7 +71,7 @@
                           <td><?php echo $heroItem->hero_button_text ?></td>
                           <td><?php echo $heroItem->hero_cv ?></td>
                           <td><?php echo $heroItem->hero_photo ?></td>
-                          <td>Edit</td>
+                          <td><a href="edit_hero.php?id=<?php echo $heroItem->hero_id?>">Edit</a></td>
                           <td><a href="delete_hero.php?id=<?php echo $heroItem->hero_id?>">Delete</a></td>
                       </tr>
                  <?php }

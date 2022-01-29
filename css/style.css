@@ -934,7 +934,7 @@ a{
     color: crimson;
 }
 
-.admin-content__table tr:nth-child(odd){
+.admin-content__table tr:nth-child(odd),.admin-content__table tr:nth-child(odd) a{
     background-color: crimson;
     color: white;
 }
@@ -962,4 +962,9 @@ a{
 .container-content{
     display: flex;
     flex-wrap: wrap;
+}
+
+.update_p{
+    font-size: 1.6rem;
+    margin-bottom: 0;
 }

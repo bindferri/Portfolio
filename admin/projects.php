@@ -93,7 +93,7 @@
                       <td><?php echo $projectItem->project_main_photo ?></td>
                       <td><?php echo $projectItem->project_second_photo ?></td>
                       <td><?php echo $projectItem->project_third_photo ?></td>
-                      <td>Edit</td>
+                      <td><a href="edit_projects.php?id=<?php echo $projectItem->project_id?>">Edit</a></td>
                       <td><a href="delete_projects.php?id=<?php echo $projectItem->project_id?>">Delete</a></td>
             </tr>
 
