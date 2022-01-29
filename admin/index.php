@@ -1,10 +1,14 @@
 <?php require_once "include/header.php";
       require_once "include/navbar.php";
+
+      //Instantiating classes
       $hero = new Hero();
       $contact = new Contact();
       $project = new Project();
       $skills = new Skills();
       $footer = new Footer();
+
+      //Counting how many were created
       $heroCount = $hero->countItems();
       $projectCount = $project->countItems();
       $contactCount = $contact->countItems();
@@ -73,7 +77,7 @@
         </div>
     </div>
 
-
+     <!-- Chart -->
      <div id="columnchart_material" class="chart"></div>
 
  </section>

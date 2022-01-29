@@ -17,4 +17,9 @@ class ParentClass{
         static::$db->query("DELETE FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_id = $id");
     }
 
+    public function selectById($id){
+        static::$db->query("SELECT * FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_id = $id");
+        return static::$db->fetchSingle();
+    }
+
 }

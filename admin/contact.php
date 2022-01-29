@@ -1,5 +1,27 @@
 <?php require_once "include/header.php";
       require_once "include/navbar.php";
+
+    //Instantiating Contact
+    $contact = new Contact();
+
+    //Getting Data from submit
+    if (isset($_POST['contact_create'])){
+
+    $contactText = $_POST['contact_text'];
+    $contactName = $_POST['contact_name'];
+    $contactAddress = $_POST['contact_address'];
+    $contactEmail = $_POST['contact_email'];
+
+    //checking if inputs were filled
+    if (!empty($contactText) && !empty($contactName) && !empty($contactAddress) && !empty($contactEmail)){
+
+        //creating new contact in database
+        $contact->createContact($contactText,$contactName,$contactAddress,$contactEmail);
+    }
+
+    //reloading page
+    redirect("contact.php");
+    }
 ?>
 
 
@@ -7,24 +29,24 @@
         <h3 class="admin__heading">Hero Customize</h3>
 
         <div class="container-content">
-        <form action="" class="form-contact form--hero">
+        <form action="" method="post" enctype="multipart/form-data" class="form-contact form--hero">
             <label>Get in Touch Text: </label>
-            <input type="text">
+            <input type="text" name="contact_text">
             <label>Name: </label>
-            <input type="text">
-            <label>Adress: </label>
-            <input type="text">
+            <input type="text" name="contact_name">
+            <label>Address: </label>
+            <input type="text" name="contact_address">
             <label>Email: </label>
-            <input type="email">
-            <button class="btn form-contact__btn">Create</button>
+            <input type="email" name="contact_email">
+            <input type="submit" value="Create" class="btn form-contact__btn" name="contact_create">
         </form>
 
         <table class="admin-content__table">
             <tr>
-                <th>Hero Text</th>
-                <th>Hero Button Text</th>
-                <th>CV File</th>
-                <th>Photo</th>
+                <th>Contact Text</th>
+                <th>Name</th>
+                <th>Address</th>
+                <th>Email</th>
             </tr>
             <tr>
                 <td>Bind Ferri Full Stack Developer</td>
@@ -35,7 +57,8 @@
                 <td>Delete</td>
             </tr>
 
-            <?php $contact = new Contact();
+            <?php
+                  //Fetching contact data
                   $allContacts = $contact->fetchAll();
                   foreach ($allContacts as $itemContact){ ?>
 

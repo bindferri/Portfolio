@@ -10,4 +10,9 @@ class Contact extends ParentClass {
     public function __construct(){
         static::$db = new Database();
     }
+
+    public function createContact($param,$param2,$param3,$param4){
+            $createContact = self::$db->query("INSERT INTO contact (contact_text,contact_name,contact_address,contact_email) VALUES 
+                            ('$param','$param2','$param3','$param4')");
+    }
 }

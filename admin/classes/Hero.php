@@ -23,7 +23,6 @@ class Hero extends ParentClass {
 
     public function createHero($param,$param2,$param3,$param4){
         $createHero = self::$db->query("INSERT INTO hero (hero_text,hero_button_text,hero_cv,hero_photo) VALUES ('$param','$param2','$param3','$param4')");
-
     }
 
 }

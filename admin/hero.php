@@ -1,7 +1,10 @@
 <?php require_once "include/header.php" ;
       require_once "include/navbar.php";
+
+      //Instantiating Hero
       $hero = new Hero();
 
+      //Getting data from submit
       if (isset($_POST['hero_create'])){
 
           $heroText = $_POST['hero_text'];
@@ -11,13 +14,17 @@
           $heroPhoto = $_FILES['hero_photo']['name'];
           $heroPhototmp = $_FILES['hero_photo']['tmp_name'];
 
+          //Checking if inputs were filled
           if (!empty($heroText) && !empty($heroButtonText) && !empty($heroCV) && !empty($heroPhoto)){
+              //Moving files to folder
               move_uploaded_file($heroPhototmp,"hero_files/".$heroPhoto);
               move_uploaded_file($heroCVtmp,"hero_files/".$heroCV);
+
+              //Creating new hero in database
               $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto);
           }
 
-
+          //Reloading Page
           redirect("hero.php");
       }
 ?>
@@ -56,6 +63,7 @@
             </tr>
 
             <?php
+                  //Fetching hero data
                   $allHero = $hero->fetchAllHero();
                   foreach ($allHero as $heroItem){ ?>
                       <tr>
