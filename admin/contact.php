@@ -44,8 +44,8 @@
                           <td><?php echo $itemContact->contact_name ?></td>
                           <td><?php echo $itemContact->contact_address ?></td>
                           <td><?php echo $itemContact->contact_email ?></td>
-                          <td>Edit</td>
-                          <td>Delete</td>
+                          <td><a href="">Edit</a></td>
+                          <td><a href="delete_contact.php?id=<?php echo $itemContact->contact_id?>">Delete</a></td>
                       </tr>
 
               <?php    }

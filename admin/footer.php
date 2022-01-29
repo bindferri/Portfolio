@@ -37,7 +37,7 @@ require_once "include/navbar.php";
                           <td><?php echo $footerItem->footer_instagram ?></td>
                           <td><?php echo $footerItem->footer_github ?></td>
                           <td>Edit</td>
-                          <td>Delete</td>
+                          <td><a href="delete_footer.php?id=<?php echo $footerItem->footer_id?>">Delete</a></td>
                       </tr>
 
                  <?php }

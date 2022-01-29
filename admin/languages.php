@@ -25,6 +25,8 @@
                       <tr>
                           <td><?php echo $skillItem->skills_name ?></td>
                           <td><?php echo $skillItem->skills_image ?></td>
+                          <td><a href="">Edit</a></td>
+                          <td><a href="delete_languages.php?id=<?php echo $skillItem->skill_id?>">Delete</a></td>
                       </tr>
 
                <?php   }

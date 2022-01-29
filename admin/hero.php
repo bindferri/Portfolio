@@ -11,6 +11,12 @@
           $heroPhoto = $_FILES['hero_photo']['name'];
           $heroPhototmp = $_FILES['hero_photo']['tmp_name'];
 
+          if (!empty($heroText) && !empty($heroButtonText) && !empty($heroCV) && !empty($heroPhoto)){
+              move_uploaded_file($heroPhototmp,"hero_files/".$heroPhoto);
+              move_uploaded_file($heroCVtmp,"hero_files/".$heroCV);
+              $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto);
+          }
+
 
           redirect("hero.php");
       }
@@ -58,7 +64,7 @@
                           <td><?php echo $heroItem->hero_cv ?></td>
                           <td><?php echo $heroItem->hero_photo ?></td>
                           <td>Edit</td>
-                          <td>Delete</td>
+                          <td><a href="delete_hero.php?id=<?php echo $heroItem->hero_id?>">Delete</a></td>
                       </tr>
                  <?php }
             ?>

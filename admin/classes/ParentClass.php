@@ -13,4 +13,8 @@ class ParentClass{
         return mysqli_num_rows($count);
     }
 
+    public function deleteItem($id){
+        static::$db->query("DELETE FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_id = $id");
+    }
+
 }
