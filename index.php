@@ -1,7 +1,11 @@
 <?php require_once "admin/include/init.php";
     require_once "include/header.php";
+
+    //Counters
     $countSkills = 0;
     $countProject = 1;
+
+    //Checking if user is signed in and fetching data for specific user
     if (isset($_SESSION['id'])) {
         $hero = new Hero();
         $heroResult = $hero->fetchAllByUser($_SESSION['id']);
@@ -54,7 +58,7 @@
     <div class="projects2 reverse">
     <div class="projects2__content">
         <h5 class="projects__heading"><?php echo $projectItem->project_name ?></h5>
-        <p><?php echo $projectItem->project_excerpt ?></p>
+        <p><?php echo $projectItem->project_excerpt ? $projectItem->project_excerpt : trimContent($projectItem->project_content) ?></p>
 
         <a href="single-project.php?id=<?php echo $projectItem->project_id?>" class="aqua">Read More...</a>
     </div>
@@ -123,7 +127,7 @@
             </div>
         </div>
 
-        <form class="form-contact">
+        <form class="form-contact" method="post" action="mail.php">
             <h4>Message me</h4>
             <div class="contact-input">
                 <input type="text" name="contact_name" placeholder="Name">

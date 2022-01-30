@@ -867,26 +867,26 @@ a{
     font-size: 1.6rem;
 }
 
-.items li{
-    list-style: none;
-    padding: 1.5rem 0;
-    transition: 0.3s ease;
-}
+/*.items a{*/
+/*    list-style: none;*/
+/*    padding: 1.5rem 0;*/
+/*    transition: 0.3s ease;*/
+/*}*/
 
 .active{
     border-left: 0.4rem solid #fff;
 }
 
-.items li:hover{
+.items a:hover{
     background-color: #253047;
     cursor: pointer;
 }
 
-.items li:hover i,.items li:hover a{
+.items a:hover i{
     color: #F3F4F6;
 }
 
-.items li i{
+.items a i{
     color: rgb(134,141,151);
     width: 3rem;
     height: 3rem;
@@ -896,9 +896,11 @@ a{
     margin: 0 1rem 0 2.5rem;
 }
 
-.items li a{
+.items a{
+    display: block;
     text-decoration: none;
     color: rgb(134,141,151);
+    padding: 1.5rem 0;
     font-weight: 300;
     transition: 0.3s ease;
 }
@@ -999,9 +1001,9 @@ a{
     color: white;
 }
 
+
 .admin-content__table td{
     border: 1px solid black;
-
     font-size: 1.5rem;
 }
 

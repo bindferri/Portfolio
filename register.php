@@ -1,6 +1,7 @@
 <?php require_once "include/header-form.php";
 $user = new User();
 
+//Getting data from form
 if (isset($_POST['create_user'])){
     $user_username = $_POST['user_username'];
     $user_name = $_POST['user_name'];
@@ -8,6 +9,7 @@ if (isset($_POST['create_user'])){
     $user_email = $_POST['user_email'];
     $user_password = $_POST['user_password'];
 
+    //Assigning errors to assoc array
     $error = ['signup_username'=>'','signup_password'=>'','signup_firstname'=>'','signup_surname'=>'','signup_email'=>''];
 
     if (strlen($user_username) < 4){
@@ -38,13 +40,17 @@ if (isset($_POST['create_user'])){
         $error['signup_surname'] = "Lastname cannot be empty";
     }
 
+    //Unseting error if there is no error
     foreach ($error as $key => $value){
         if (empty($value)){
             unset($error[$key]);
         }
     }
 
+    //Checking array for errors
     if (empty($error)){
+
+        //Creating new user and redirecting
         $user->createUser($user_username,$user_name,$user_surname,$user_password,$user_email);
         redirect("admin/index.php");
     }

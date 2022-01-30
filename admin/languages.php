@@ -38,6 +38,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="skills_create">
         </form>
 
+
         <?php //Fetching skills data
         $allSkills = $skills->fetchAllByUser($_SESSION['id']);
             if ($allSkills){

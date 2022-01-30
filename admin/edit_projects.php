@@ -92,7 +92,7 @@ if (isset($_POST['project_update'])) {
                 <label>Project Excerpt: </label>
                 <input type="text" name="project_excerpt" value="<?php echo $projectData->project_excerpt ?>">
                 <label>Project Content: </label>
-                <textarea name="project_content" id="" cols="30" rows="10"><?php echo $projectData->project_content ?></textarea>
+                <textarea name="project_content" cols="50" rows="10"><?php echo $projectData->project_content ?></textarea>
                 <label>Main Photo: </label>
                 <p class="update_p"><?php echo $projectData->project_main_photo ?></p>
                 <input type="file" name="project_main_photo">

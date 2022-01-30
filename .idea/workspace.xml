@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="Admin Pages Commit">
+    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mail.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/classes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/classes/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/edit_projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_projects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/include/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/navbar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/languages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/languages.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/projects.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-project.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-project.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,9 +49,15 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/ferrify" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Javascript/modal" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Portfolio\admin\assets" />
+      <recent name="C:\xampp\htdocs\Portfolio\admin\classes" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,6 +71,12 @@
       <workItem from="1643127886465" duration="12864000" />
       <workItem from="1643206362272" duration="25626000" />
       <workItem from="1643295455212" duration="30155000" />
+      <workItem from="1643334421295" duration="122000" />
+      <workItem from="1643334659470" duration="2263000" />
+      <workItem from="1643379914564" duration="3583000" />
+      <workItem from="1643385299511" duration="24435000" />
+      <workItem from="1643459675870" duration="30883000" />
+      <workItem from="1643548251641" duration="20515000" />
     </task>
     <task id="LOCAL-00001" summary="Navbar">
       <created>1643059334699</created>
@@ -143,7 +169,91 @@
       <option name="project" value="LOCAL" />
       <updated>1643324158200</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Responsive Page Commit">
+      <created>1643334537050</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1643334537050</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Single Page Improvements And Responsive">
+      <created>1643380490359</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1643380490359</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Including PHP , Converting HTML files to PHP , Connection to Database,Showing Data In Pages Commit">
+      <created>1643414617811</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1643414617811</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Deleting Data From Admin Dashboard Commit">
+      <created>1643415737540</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1643415737540</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Creating Data from Admin Dashboard">
+      <created>1643425712678</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1643425712678</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Updating Data From Admin Dashboard">
+      <created>1643467987157</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643467987157</updated>
+    </task>
+    <task id="LOCAL-00020" summary="User and Session Class.Login,Logout and user verifying Commit">
+      <created>1643500337650</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1643500337650</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Showing Data for specific user , Security for user's data">
+      <created>1643503638246</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1643503638246</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Improvements in admin dashboard">
+      <created>1643504199795</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1643504199795</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Limiting creation of more than 1: hero,footer,contact">
+      <created>1643505036284</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1643505036284</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Fetching Data in Main Page From Admin Dashboard">
+      <created>1643509774589</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1643509774589</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Improving Allround">
+      <created>1643573207995</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1643573207995</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,25 +272,42 @@
     <MESSAGE value="Admin Dashboard Improvements" />
     <MESSAGE value="Images Commit" />
     <MESSAGE value="Admin Pages Commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Admin Pages Commit" />
+    <MESSAGE value="Responsive Page Commit" />
+    <MESSAGE value="Single Page Improvements" />
+    <MESSAGE value="Single Page Improvements And Responsive" />
+    <MESSAGE value="Including PHP , Converting HTML files to PHP , Connection to Database,Showing Data In Pages Commit" />
+    <MESSAGE value="Deleting Data From Admin Dashboard Commit" />
+    <MESSAGE value="Creating Data from Admin Dashboard" />
+    <MESSAGE value="Updating Data From Admin Dashboard" />
+    <MESSAGE value="User and Session Class.Login,Logout and user verifying Commit" />
+    <MESSAGE value="Showing Data for specific user , Security for user's data" />
+    <MESSAGE value="Improvements in admin dashboard" />
+    <MESSAGE value="Limiting creation of more than 1: hero,footer,contact" />
+    <MESSAGE value="Fetching Data in Main Page From Admin Dashboard" />
+    <MESSAGE value="Improving Allround" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improving Allround" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643058289257">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058289257" />
-    <state x="585" y="88" key="CommitChangelistDialog2" timestamp="1643324157788">
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1643574985713">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643324157788" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643574985713" />
+    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2" timestamp="1643578293087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643578293087" />
     <state x="184" y="86" key="DiffContextDialog" timestamp="1643295744170">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643295744170" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643319513433">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643572701569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643319513433" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1643572701569" />
     <state x="838" y="418" key="Github.ShareDialog" timestamp="1643058417201">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -189,14 +316,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="803" y="225" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643058425026" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643324161825">
+    <state x="754" y="243" key="NewPhpClassDialog" timestamp="1643486172441">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643324161825" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1643243114798">
+    <state x="754" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643486172441" />
+    <state x="794" y="443" key="NewPhpFileDialog" timestamp="1643576425428">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643243114798" />
+    <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643576425428" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643573210092">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643573210092" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1643421017579">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643421017579" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1643507442906">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1643507442906" />
     <state x="765" y="206" key="svn.repositoryBrowser" timestamp="1643058369729">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

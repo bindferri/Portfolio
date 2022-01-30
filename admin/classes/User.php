@@ -25,16 +25,19 @@ class User extends ParentClass{
                                         ,user_email = '$param5' WHERE user_id = $id");
     }
 
+    //Checking if user exists
     public function usernameExists($username){
         $allUsers = self::$db->query("SELECT * FROM user WHERE user_username = '$username'");
         return mysqli_num_rows($allUsers) > 0;
     }
 
+    //Checking if email exists
     public function emailExists($email){
         $allUsers = self::$db->query("SELECT * FROM user WHERE user_email = '$email'");
         return mysqli_num_rows($allUsers) > 0;
     }
 
+    //Verifying login
     public function verifyLogIn($username,$password){
        $verifyLogIn = self::$db->query("SELECT * FROM user WHERE user_username = '$username' AND user_password = '$password'");
        return mysqli_num_rows($verifyLogIn) > 0;

@@ -1,6 +1,6 @@
 <?php require_once "include/header-secondary.php";
 
-
+//Getting project id
 if (isset($_GET['id']) && !empty($_GET['id'])){
     $id = $_GET['id'];
 }else{
@@ -8,6 +8,8 @@ if (isset($_GET['id']) && !empty($_GET['id'])){
 }
 
 $project = new Project();
+
+//fetching specific project
 $projectItem = $project->fetchSingle($id);
 
 ?>

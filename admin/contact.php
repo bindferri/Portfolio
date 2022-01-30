@@ -47,6 +47,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="contact_create">
         </form>
 
+            <div>
             <?php if ($allContacts){ ?>
         <table class="admin-content__table">
             <tr>
@@ -74,6 +75,7 @@
 
         </table>
                 <?php } ?>
+            </div>
         </div>
     </section>
 </div>

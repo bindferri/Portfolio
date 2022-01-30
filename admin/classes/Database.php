@@ -5,7 +5,6 @@ class Database{
     //Declaring variables
     public $connection;
     private $statement;
-    private $escapeString;
 
     //Class constructor (Creating connection with database)
     public function __construct(){
@@ -31,13 +30,6 @@ class Database{
         }
         return $array;
     }
-
-    //Clearing strings from malicious code
-    public function escapeString($string){
-        $this->escapeString = $this->connection->real_escape_string($string);
-        return $this->escapeString;
-    }
-
 
 }
 

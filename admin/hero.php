@@ -51,6 +51,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="hero_create">
         </form>
 
+
          <?php if ($allHero){ ?>
         <table class="admin-content__table">
             <tr>

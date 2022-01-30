@@ -62,6 +62,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="project_create">
         </form>
 
+
             <?php $allProjects = $project->fetchAllByUser($_SESSION['id']);
                 if ($allProjects){
             ?>

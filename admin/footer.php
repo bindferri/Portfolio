@@ -45,6 +45,7 @@ if (isset($_POST['footer_create'])) {
             <input type="submit" value="Create" class="btn form-contact__btn" name="footer_create">
         </form>
 
+
             <?php if ($allFooters){ ?>
         <table class="admin-content__table">
             <tr>
@@ -63,7 +64,7 @@ if (isset($_POST['footer_create'])) {
                           <td><?php echo $footerItem->footer_fb ?></td>
                           <td><?php echo $footerItem->footer_instagram ?></td>
                           <td><?php echo $footerItem->footer_github ?></td>
-                          <td><a href="edit_footer.php?id=<?php echo $footerItem->footer_id?>">Edit</td>
+                          <td><a href="edit_footer.php?id=<?php echo $footerItem->footer_id?>">Edit</a></td>
                           <td><a href="delete_footer.php?id=<?php echo $footerItem->footer_id?>">Delete</a></td>
                       </tr>
 
