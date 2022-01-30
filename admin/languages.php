@@ -17,7 +17,7 @@
         move_uploaded_file($skillsImageTemp,"assets/skills_img/".$skillsImage);
 
         //Creating new skill
-        $skills->createSkills($skillsName,$skillsImage);
+        $skills->createSkills($skillsName,$skillsImage,$_SESSION['id']);
     }
 
     //Reloading page
@@ -45,7 +45,7 @@
             </tr>
             <?php
                   //Fetching skills data
-                  $allSkills = $skills->fetchAll();
+                  $allSkills = $skills->fetchAllByUser($_SESSION['id']);
                   foreach ($allSkills as $skillItem){ ?>
 
                       <tr>

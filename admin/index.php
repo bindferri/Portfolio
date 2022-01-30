@@ -40,16 +40,6 @@
         </div>
 
         <div class="admin-car__icon">
-        <i class="fas fa-address-card"></i>
-
-        <div class="admin-card__text">
-            <h3>8,267</h3>
-            <span>About Created</span>
-        </div>
-        </div>
-
-
-        <div class="admin-car__icon">
             <i class="fas fa-language"></i>
 
             <div class="admin-card__text">

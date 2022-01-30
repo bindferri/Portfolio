@@ -16,12 +16,14 @@
     if (!empty($contactText) && !empty($contactName) && !empty($contactAddress) && !empty($contactEmail)){
 
         //creating new contact in database
-        $contact->createContact($contactText,$contactName,$contactAddress,$contactEmail);
+        $contact->createContact($contactText,$contactName,$contactAddress,$contactEmail,$_SESSION['id']);
     }
 
     //reloading page
     redirect("contact.php");
     }
+
+
 ?>
 
 
@@ -48,18 +50,10 @@
                 <th>Address</th>
                 <th>Email</th>
             </tr>
-            <tr>
-                <td>Bind Ferri Full Stack Developer</td>
-                <td>Check my work</td>
-                <td>img/cv.pdf</td>
-                <td>img/bindferri.png</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>
 
             <?php
                   //Fetching contact data
-                  $allContacts = $contact->fetchAll();
+                  $allContacts = $contact->fetchAllByUser($_SESSION['id']);
                   foreach ($allContacts as $itemContact){ ?>
 
                       <tr>

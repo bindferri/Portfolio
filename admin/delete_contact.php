@@ -1,16 +1,23 @@
 <?php
 require_once "include/header.php";
 
-//Getting contact id to delete
-if (isset($_GET['id'])){
-    $id = $_GET['id'];
-}
-
 //Instantiating contact
 $contact = new Contact();
 
-//deleting contact
-$contact->deleteItem($id);
+//Getting contact id to delete
+if (isset($_GET['id'])){
+    $id = $_GET['id'];
+    $contactData = $contact->selectById($id);
+    if ($contactData->contact_createdby !== $_SESSION['id']){
+        redirect("index.php");
+    }else{
+        //deleting contact
+        $contact->deleteItem($id);
 
-//reloading page
-redirect("contact.php");
+        //reloading page
+        redirect("contact.php");
+    }
+}
+
+
+

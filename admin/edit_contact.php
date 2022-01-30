@@ -9,6 +9,9 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $contactData = $contact->selectById($id);
+    if ($contactData->contact_createdby !== $_SESSION['id']){
+        redirect("index.php");
+    }
 }
 
 

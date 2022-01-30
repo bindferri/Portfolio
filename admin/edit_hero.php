@@ -9,6 +9,9 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $heroData = $hero->selectById($id);
+    if ($heroData->hero_createdby !== $_SESSION){
+        redirect("index.php");
+    }
 }
 
 
@@ -64,7 +67,7 @@ if (isset($_POST['hero_update'])) {
                 <label>Your Photo:</label>
                 <p class="update_p"><?php echo $heroData->hero_photo ?></p>
                 <input type="file" name="hero_photo" value="<?php echo $heroData->hero_photo ?>">
-                <input type="submit" value="Create" class="btn form-contact__btn" name="hero_update">
+                <input type="submit" value="Update" class="btn form-contact__btn" name="hero_update">
             </form>
 
     </section>

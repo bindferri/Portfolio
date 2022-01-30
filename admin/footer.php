@@ -16,7 +16,7 @@ if (isset($_POST['footer_create'])) {
     if (!empty($footerText) && !empty($footerFb) && !empty($footerInsta) && !empty($footerGithub)) {
 
         //Creating footer in database
-        $footer->createFooter($footerText, $footerFb, $footerInsta, $footerGithub);
+        $footer->createFooter($footerText, $footerFb, $footerInsta, $footerGithub,$_SESSION['id']);
     }
 
     //Reloading page
@@ -51,7 +51,7 @@ if (isset($_POST['footer_create'])) {
 
             <?php
                   //Fetching footer data
-                  $allFooters = $footer->fetchAll();
+                  $allFooters = $footer->fetchAllByUser($_SESSION['id']);
                   foreach ($allFooters as $footerItem){ ?>
 
                       <tr>

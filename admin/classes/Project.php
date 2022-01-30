@@ -6,7 +6,7 @@ class Project extends ParentClass {
     //Declaring variables
     protected static $db;
     protected static $db_tableName = "project";
-    protected static $db_tableFields = ['project_name','project_excerpt','project_content','project_main_photo','project_second_photo','project_third_photo'];
+    protected static $db_tableFields = ['project_name','project_excerpt','project_content','project_main_photo','project_second_photo','project_third_photo','project_createdby'];
     public $id;
     public $projectName;
     public $projectExcerpt;
@@ -21,9 +21,9 @@ class Project extends ParentClass {
     }
 
     //Creating new project
-    public function createProject($param,$param2,$param3,$param4,$param5,$param6){
-        $createProject = self::$db->query("INSERT INTO project (project_name,project_excerpt,project_content,project_main_photo,project_second_photo,project_third_photo)
-                    VALUES ('$param','$param2','$param3','$param4','$param5','$param6')");
+    public function createProject($param,$param2,$param3,$param4,$param5,$param6,$param7){
+        $createProject = self::$db->query("INSERT INTO project (project_name,project_excerpt,project_content,project_main_photo,project_second_photo,project_third_photo,project_createdby)
+                    VALUES ('$param','$param2','$param3','$param4','$param5','$param6','$param7')");
     }
 
     //Updating existing method

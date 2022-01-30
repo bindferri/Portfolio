@@ -9,6 +9,9 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $skillsData = $skills->selectById($id);
+    if ($skillsData->skills_createdby !== $_SESSION['id']){
+        redirect("index.php");
+    }
 }
 
 

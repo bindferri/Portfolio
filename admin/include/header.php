@@ -20,7 +20,7 @@
 
 <header>
     <nav class="navbar">
-        <img src="../img/logo-2.png" alt="">
+        <a href="../index.php"><img src="../img/logo-2.png" alt=""></a>
         <ul class="navbar__menu">
             <li><a class="open-overlay" href="logout.php">Log Out</a></li>
         </ul>

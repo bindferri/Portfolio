@@ -33,7 +33,7 @@
               }
 
               //Creating new project in database
-              $project->createProject($projectName,$projectExc,$projectContent,$projectMainPhoto,$projectSecondPhoto,$projectThirdPhoto);
+              $project->createProject($projectName,$projectExc,$projectContent,$projectMainPhoto,$projectSecondPhoto,$projectThirdPhoto,$_SESSION['id']);
           }
 
           //Reloading the page
@@ -72,19 +72,12 @@
                 <th>Third Photo</th>
             </tr>
             <tr>
-                <td>Bind Ferri Full Stack Developer</td>
-                <td>Check my work</td>
-                <td>img/cv.pdf</td>
-                <td>img/bindferri.png</td>
-                <td>img/bindferri.png</td>
-                <td>img/bindferri.png</td>
-                <td>Edit</td>
-                <td>Delete</td>
+
             </tr>
 
             <?php
                   //Fetching All Data From Project
-                  $allProjects = $project->fetchAll();
+                  $allProjects = $project->fetchAllByUser($_SESSION['id']);
                   foreach ($allProjects as $projectItem){ ?>
             <tr>
                       <td><?php echo $projectItem->project_name ?></td>

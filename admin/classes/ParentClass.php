@@ -10,6 +10,12 @@ class ParentClass{
     }
 
     //fetching all data method
+    public function fetchAllByUser($id){
+        static::$db->query("SELECT * FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_createdby = '$id'");
+        return static::$db->fetchAll();
+    }
+
+    //fetching all data method
     public function fetchSingle($id){
         static::$db->query("SELECT * FROM ".static::$db_tableName." WHERE ".static::$db_tableName."_id = '$id'");
         return static::$db->fetchSingle();

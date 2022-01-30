@@ -21,7 +21,7 @@
               move_uploaded_file($heroCVtmp,"assets/hero_files/".$heroCV);
 
               //Creating new hero in database
-              $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto);
+              $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto,$_SESSION['id']);
           }
 
           //Reloading Page
@@ -53,18 +53,10 @@
                 <th>CV File</th>
                 <th>Photo</th>
             </tr>
-            <tr>
-                <td>Bind Ferri Full Stack Developer</td>
-                <td>Check my work</td>
-                <td>img/cv.pdf</td>
-                <td>img/bindferri.png</td>
-                <td>Edit</td>
-                <td>Delete</td>
-            </tr>
 
             <?php
                   //Fetching hero data
-                  $allHero = $hero->fetchAllHero();
+                  $allHero = $hero->fetchAllByUser($_SESSION['id']);
                   foreach ($allHero as $heroItem){ ?>
                       <tr>
                           <td><?php echo $heroItem->hero_text ?></td>

@@ -8,6 +8,9 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $footerData = $footer->selectById($id);
+    if ($footerData->footer_createdby !== $_SESSION['id']){
+        redirect("index.php");
+    }
 }
 
 

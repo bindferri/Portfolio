@@ -9,6 +9,9 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $projectData = $project->selectById($id);
+    if ($projectData->project_createdby !== $_SESSION['id']){
+        redirect("index.php");
+    }
 }
 
 
@@ -99,7 +102,7 @@ if (isset($_POST['project_update'])) {
                 <label>Third Photo: </label>
                 <p class="update_p"><?php echo $projectData->project_third_photo ?></p>
                 <input type="file" name="project_third_photo">
-                <input type="submit" value="Create" class="btn form-contact__btn" name="project_update">
+                <input type="submit" value="Update" class="btn form-contact__btn" name="project_update">
             </form>
 
     </section>

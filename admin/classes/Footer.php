@@ -6,7 +6,7 @@ class Footer extends ParentClass {
     //Declaring variables
     protected static $db;
     protected static $db_tableName = "footer";
-    protected static $db_tableFields = ['footer_text','footer_facebook','footer_instagram','footer_github'];
+    protected static $db_tableFields = ['footer_text','footer_facebook','footer_instagram','footer_github','footer_createdby'];
 
     //Class constructor
     public function __construct(){
@@ -14,9 +14,9 @@ class Footer extends ParentClass {
     }
 
     //Creating new footer method
-    public function createFooter($param,$param2,$param3,$param4){
-        $createContact = self::$db->query("INSERT INTO footer (footer_text,footer_fb,footer_instagram,footer_github) VALUES 
-                            ('$param','$param2','$param3','$param4')");
+    public function createFooter($param,$param2,$param3,$param4,$param5){
+        $createContact = self::$db->query("INSERT INTO footer (footer_text,footer_fb,footer_instagram,footer_github,footer_createdby) VALUES 
+                            ('$param','$param2','$param3','$param4','$param5')");
     }
 
     //Updating existing footer method
