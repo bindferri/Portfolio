@@ -27,7 +27,7 @@ if (isset($_POST['contact_update'])) {
     if (!empty($contactText) && !empty($contactName) && !empty($contactAddress) && !empty($contactEmail)) {
 
         //Updating contact in database
-        $contact->updateContact($contactText,$contactName,$contactAddress,$contactEmail,$id);
+        $contact->updateContact($contactText,$contactName,$contactAddress,$contactEmail,$_SESSION['id'],$id);
     }
 
     //Reloading page

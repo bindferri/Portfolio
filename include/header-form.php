@@ -1,7 +1,10 @@
 <?php require_once "admin/include/init.php";
+if (isset($_SESSION['id'])){
+    redirect('index.php');
+}
 $session = new Session();
-?>
 
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,13 +24,10 @@ $session = new Session();
         <a href="index.php"><img src="img/logo-2.png" alt=""></a>
         <i class="fas fa-bars menu_icon toggle"></i>
         <ul class="navbar__menu">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <?php if (isset($_SESSION['id'])){ ?>
-            <li><a href="admin/index.php">Admin</a></li>
-            <?php } ?>
-            <li><a href="<?php echo isset($_SESSION['id']) ? "admin/logout.php" : "login.php" ?>"><?php echo isset($_SESSION['id']) ? "Log Out" : "Log In" ?></a></li>
+            <li><a href="<?php echo basename($_SERVER['PHP_SELF']) == 'login.php' ? 'register.php' : 'login.php' ?>"><?php echo basename($_SERVER['PHP_SELF']) == 'login.php' ? 'Register' : 'Log In' ?></a></li>
         </ul>
     </nav>
+    <div class="test">
+        <hr>
+    </div>
 </header>

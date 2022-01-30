@@ -1,4 +1,4 @@
-<?php require_once "admin/include/init.php";
+<?php require_once "include/header-form.php";
 $user = new User();
 
 if (isset($_POST['create_user'])){
@@ -50,32 +50,7 @@ if (isset($_POST['create_user'])){
     }
 }
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bind Ferri - Minimalist Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-</head>
-<body>
 
-<header>
-    <nav class="navbar">
-        <img src="img/logo-2.png" alt="">
-        <i class="fas fa-bars menu_icon"></i>
-        <ul class="navbar__menu">
-            <li><a href="login.php">Log In</a></li>
-        </ul>
-    </nav>
-    <div class="test">
-        <hr>
-    </div>
-</header>
 
 <section class="register">
 <form class="form-contact" action="" method="post" enctype="multipart/form-data">
@@ -94,18 +69,4 @@ if (isset($_POST['create_user'])){
 </form>
 </section>
 
-<footer class="footer">
-    <div class="footer__social-media">
-        <ul class="navbar__menu center">
-            <li><a href="https://www.facebook.com/brindiii/" target="_blank"><img src="img/facebook.png" alt=""></a></li>
-            <li><a href="https://www.instagram.com/bindferri/" target="_blank"><img src="img/instagram.png" alt=""></a></li>
-            <li><a href="https://github.com/bindferri" target="_blank"><img src="img/github.png" alt=""></a></li>
-        </ul>
-    </div>
-    <div>
-        <p class="footer__content">2022 &copy; BIND FERRI - ALL RIGHTS RESERVED</p>
-    </div>
-</footer>
-
-</body>
-</html>
+<?php require_once "include/footer.php" ?>
