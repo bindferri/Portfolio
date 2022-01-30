@@ -18,7 +18,7 @@
 
 
  <section class="admin-content">
-    <h3 class="admin__heading">Dashboard</h3>
+    <h3 class="admin__heading">Welcome to Dashboard,<?php echo $_SESSION['username'] ?></h3>
 
     <div class="admin-card">
         <div class="admin-car__icon">

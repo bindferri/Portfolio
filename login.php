@@ -11,6 +11,7 @@
          if ($user->verifyLogIn($username,$password)){
              $currentUser = $user->fetchSingleByUsername($username);
              $_SESSION['id'] = $currentUser->user_id;
+             $_SESSION['username'] = $username;
              $session->login(true);
              redirect("admin/index.php");
          }else{

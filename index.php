@@ -1,112 +1,79 @@
 <?php require_once "admin/include/init.php";
+    require_once "include/header.php";
+    $countSkills = 0;
+    $countProject = 1;
     $hero = new Hero();
-    $heroResult = $hero->fetchSingle(51);
+    $heroResult = $hero->fetchAllByUser($_SESSION['id']);
+    $project = new Project();
+    $projectResult = $project->fetchAllByUser($_SESSION['id']);
+    $skills = new Skills();
+    $skillsResult = $skills->fetchAllByUser($_SESSION['id']);
+    $contact = new Contact();
+    $contactResult = $contact->fetchAllByUser($_SESSION['id']);
+    print_r($contactResult);
 ?>
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bind Ferri - Minimalist Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"/>
-</head>
-<body>
 
-<header>
-    <nav class="navbar">
-        <a href="index.php"><img src="img/logo-2.png" alt=""></a>
-        <i class="fas fa-bars menu_icon"></i>
-        <ul class="navbar__menu">
-            <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="login.php">Log In</a></li>
-        </ul>
-    </nav>
-</header>
 
 
 <section class="hero">
     <div class="hero__text">
-        <h5 class="hero__text--heading"><?php echo $heroResult->hero_text ?></h5>
+        <h5 class="hero__text--heading"><?php echo $heroResult[0]->hero_text ?></h5>
         <div class="hero__buttons">
-        <a href="#projects"><button class="btn hero__link">Check out my work</button></a>
-        <a href="img/CV-BIND_FERRI.pdf" download="CV"><button class="btn hero__link">Download CV</button></a>
+        <a href="#projects"><button class="btn hero__link"><?php echo $heroResult[0]->hero_button_text ?></button></a>
+        <a href="admin/assets/hero_files/<?php echo $heroResult[0]->hero_cv?>" download="CV"><button class="btn hero__link">Download CV</button></a>
         </div>
     </div>
     <picture class="hero__picture">
         <!--        <source type="image/webp" srcset="img/hero.webp">-->
         <!--        <source type="image/jpg" srcset="img/hero.jpg">-->
-        <img class="hero__img" src="img/bindferritransparent.png" alt="">
+        <img class="hero__img" src="admin/assets/hero_files/<?php echo $heroResult[0]->hero_photo ?>" alt="">
     </picture>
 </section>
 
 <section class="projects1" id="projects">
+
     <h2 class="section__header">Projects</h2>
+
+    <?php foreach ($projectResult as $projectItem){
+        if ($countProject % 2 != 0){ ?>
     <div class="projects2">
-    <img class="projects2__img" src="img/omnifood.png" alt="">
+    <img class="projects2__img" src="admin/assets/project_img/<?php echo $projectItem->project_main_photo ?>" alt="">
     <div class="projects2__content">
-        <h5 class="projects__heading">Omni Food</h5>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ex excepturi numquam quidem quos sint suscipit tempora tenetur vel. Atque beatae culpa eligendi est ex nihil quis rem temporibus voluptatem.</span></p>
+        <h5 class="projects__heading"><?php echo $projectItem->project_name ?></h5>
+        <p><?php echo $projectItem->project_excerpt ?></p>
         <a href="#" class="orange">Read More...</a>
     </div>
     </div>
+    <?php $countProject++; }else{  ?>
 
     <div class="projects2 reverse">
     <div class="projects2__content">
-        <h5 class="projects__heading">Ferrify</h5>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ex excepturi numquam quidem quos sint suscipit tempora tenetur vel. Atque beatae culpa eligendi est ex nihil quis rem temporibus voluptatem.</span></p>
+        <h5 class="projects__heading"><?php echo $projectItem->project_name ?></h5>
+        <p><?php echo $projectItem->project_excerpt ?></p>
 
         <a href="#" class="aqua">Read More...</a>
     </div>
-    <img class="projects2__img" src="img/ferrify.png" alt="">
+    <img class="projects2__img" src="admin/assets/project_img/<?php echo $projectItem->project_main_photo ?>" alt="">
     </div>
+    <?php $countProject++; } } ?>
 
-    <div class="projects2">
-    <img class="projects2__img" src="img/clarius.png" alt="">
-    <div class="projects2__content">
-        <h5 class="projects__heading">Clarius</h5>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ex excepturi numquam quidem quos sint suscipit tempora tenetur vel. Atque beatae culpa eligendi est ex nihil quis rem temporibus voluptatem.</span></p>
-        <a href="#" class="grey">Read More...</a>
-    </div>
-    </div>
 
-    <div class="projects2 reverse">
-    <div class="projects2__content">
-        <h5 class="projects__heading">Forkify</h5>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ex excepturi numquam quidem quos sint suscipit tempora tenetur vel. Atque beatae culpa eligendi est ex nihil quis rem temporibus voluptatem.</span></p>
-        <a href="#" class="red">Read More...</a>
-    </div>
-    <img class="projects2__img" src="img/forkify.png" alt="">
-    </div>
-
-    <div class="projects2">
-    <img class="projects2__img" src="img/cms.png" alt="">
-    <div class="projects2__content">
-        <h5 class="projects__heading">CMS</h5>
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, ex excepturi numquam quidem quos sint suscipit tempora tenetur vel. Atque beatae culpa eligendi est ex nihil quis rem temporibus voluptatem.</span></p>
-        <a href="#">Read More...</a>
-    </div>
-    </div>
 </section>
 
 <section class="knowledge" id="about-me">
     <h2 class="section__header">Skills</h2>
-    
+
+    <?php foreach ($skillsResult as $skillItem){
+        if ($countSkills % 3 === 0){
+        ?>
     <div class="languages">
-        <img src="img/html.png" alt="">
-        <img src="img/css.png" alt="">
-        <img src="img/javascript.png" alt="">
+    <?php } ?>
+        <img src="admin/assets/skills_img/<?php echo $skillItem->skills_image ?>" alt="">
+        <?php $countSkills++; }
+        if ($countSkills === 1 || $countSkills % 3 === 0){
+        ?>
     </div>
-    <div class="languages">
-        <img src="img/php.png" alt="">
-        <img src="img/wordpress.png" alt="">
-        <img src="img/java.png" alt="">
-    </div>
+    <?php } ?>
 </section>
 
 <section class="contact" id="contact">
@@ -117,23 +84,22 @@
         <div class="contact-info">
             <div class="contact-info__text">
                 <h4>Get in Touch</h4>
-                <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam qui quis ullam velit, voluptas voluptates.
-                    Ipsam qui quis ullam velit, voluptas voluptates.</span></p>
+                <p><?php echo $contactResult[0]->contact_text ?></p>
             </div>
 
             <div class="contact-info__info">
                 <i class="fas fa-user-alt"></i>
                 <div class="contact-info__card">
                     <h5>Name</h5>
-                    <p>Bind Ferri</p>
+                    <p><?php echo $contactResult[0]->contact_name ?></p>
                 </div>
             </div>
 
             <div class="contact-info__info">
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="contact-info__card">
-                    <h5>Adress</h5>
-                    <p>Prishtine,Kosove</p>
+                    <h5>Address</h5>
+                    <p><?php echo $contactResult[0]->contact_address ?></p>
                 </div>
             </div>
 
@@ -141,7 +107,7 @@
                 <i class="fas fa-envelope"></i>
                 <div class="contact-info__card">
                     <h5>Email</h5>
-                    <p>bindferri@gmail.com</p>
+                    <p><?php echo $contactResult[0]->contact_email ?></p>
                 </div>
             </div>
         </div>

@@ -9,7 +9,7 @@ $id = $_GET['id'];
 if (isset($_GET['id'])){
     $id = $_GET['id'];
     $heroData = $hero->selectById($id);
-    if ($heroData->hero_createdby !== $_SESSION){
+    if ($heroData->hero_createdby !== $_SESSION['id']){
         redirect("index.php");
     }
 }
