@@ -38,14 +38,17 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="skills_create">
         </form>
 
+        <?php //Fetching skills data
+        $allSkills = $skills->fetchAllByUser($_SESSION['id']);
+            if ($allSkills){
+        ?>
         <table class="admin-content__table">
             <tr>
                 <th>Skills Name</th>
                 <th>Skills Image</th>
             </tr>
             <?php
-                  //Fetching skills data
-                  $allSkills = $skills->fetchAllByUser($_SESSION['id']);
+
                   foreach ($allSkills as $skillItem){ ?>
 
                       <tr>
@@ -59,6 +62,7 @@
             ?>
 
         </table>
+                <?php } ?>
         </div>
     </section>
 </div>

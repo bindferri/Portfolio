@@ -43,6 +43,10 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="contact_create">
         </form>
 
+            <?php //Fetching contact data
+            $allContacts = $contact->fetchAllByUser($_SESSION['id']);
+            if ($allContacts){
+            ?>
         <table class="admin-content__table">
             <tr>
                 <th>Contact Text</th>
@@ -52,8 +56,7 @@
             </tr>
 
             <?php
-                  //Fetching contact data
-                  $allContacts = $contact->fetchAllByUser($_SESSION['id']);
+
                   foreach ($allContacts as $itemContact){ ?>
 
                       <tr>
@@ -69,6 +72,7 @@
             ?>
 
         </table>
+                <?php } ?>
         </div>
     </section>
 </div>

@@ -46,6 +46,10 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="hero_create">
         </form>
 
+         <?php
+        $allHero = $hero->fetchAllByUser($_SESSION['id']);
+        if ($allHero){
+            ?>
         <table class="admin-content__table">
             <tr>
                 <th>Hero Text</th>
@@ -56,7 +60,7 @@
 
             <?php
                   //Fetching hero data
-                  $allHero = $hero->fetchAllByUser($_SESSION['id']);
+
                   foreach ($allHero as $heroItem){ ?>
                       <tr>
                           <td><?php echo $heroItem->hero_text ?></td>
@@ -69,6 +73,7 @@
                  <?php }
             ?>
         </table>
+            <?php } ?>
     </div>
     </section>
 </div>

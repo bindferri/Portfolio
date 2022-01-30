@@ -42,4 +42,5 @@ class ParentClass{
         return static::$db->fetchSingle();
     }
 
+
 }

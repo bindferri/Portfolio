@@ -62,6 +62,9 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="project_create">
         </form>
 
+            <?php $allProjects = $project->fetchAllByUser($_SESSION['id']);
+                if ($allProjects){
+            ?>
         <table class="admin-content__table">
             <tr>
                 <th>Project Name</th>
@@ -77,7 +80,7 @@
 
             <?php
                   //Fetching All Data From Project
-                  $allProjects = $project->fetchAllByUser($_SESSION['id']);
+
                   foreach ($allProjects as $projectItem){ ?>
             <tr>
                       <td><?php echo $projectItem->project_name ?></td>
@@ -93,6 +96,7 @@
                  <?php }
             ?>
         </table>
+                    <?php } ?>
         </div>
     </section>
 </div>

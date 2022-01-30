@@ -41,6 +41,10 @@ if (isset($_POST['footer_create'])) {
             <input type="submit" value="Create" class="btn form-contact__btn" name="footer_create">
         </form>
 
+            <?php //Fetching footer data
+            $allFooters = $footer->fetchAllByUser($_SESSION['id']);
+                if ($allFooters){
+            ?>
         <table class="admin-content__table">
             <tr>
                 <th>Footer Text</th>
@@ -50,8 +54,7 @@ if (isset($_POST['footer_create'])) {
             </tr>
 
             <?php
-                  //Fetching footer data
-                  $allFooters = $footer->fetchAllByUser($_SESSION['id']);
+
                   foreach ($allFooters as $footerItem){ ?>
 
                       <tr>
@@ -66,6 +69,7 @@ if (isset($_POST['footer_create'])) {
                  <?php }
             ?>
         </table>
+                    <?php } ?>
         </div>
 
     </section>
