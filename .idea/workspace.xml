@@ -1,24 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mail.php" afterDir="false" />
+    <list default="true" id="29a4cd96-597a-4da4-98c0-b2475b364c82" name="Default Changelist" comment="Final Commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/classes/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/classes/Session.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/Session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/classes/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/edit_projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/edit_projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/hero.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/include/navbar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/include/navbar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/languages.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/languages.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/admin/projects.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single-project.php" beforeDir="false" afterPath="$PROJECT_DIR$/single-project.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,8 +243,10 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Navbar" />
     <MESSAGE value="Hero Commit" />
     <MESSAGE value="About Me Commit" />
     <MESSAGE value="Footer Commit" />
@@ -285,7 +271,8 @@
     <MESSAGE value="Limiting creation of more than 1: hero,footer,contact" />
     <MESSAGE value="Fetching Data in Main Page From Admin Dashboard" />
     <MESSAGE value="Improving Allround" />
-    <option name="LAST_COMMIT_MESSAGE" value="Improving Allround" />
+    <MESSAGE value="Final Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final Commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1643058289257">
@@ -296,14 +283,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643574985713" />
-    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2" timestamp="1643578293087">
+    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2" timestamp="1643579506333">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643578293087" />
-    <state x="184" y="86" key="DiffContextDialog" timestamp="1643295744170">
+    <state x="585" y="88" width="749" height="948" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1643579506333" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1643579728778">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643295744170" />
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643579728778" />
     <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1643572701569">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -324,10 +311,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="794" y="443" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1643576425428" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643573210092">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1643579746249">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643573210092" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643579746249" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1643579759113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1643579759113" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1643421017579">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
