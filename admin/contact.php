@@ -4,6 +4,9 @@
     //Instantiating Contact
     $contact = new Contact();
 
+    //Fetching contact data
+    $allContacts = $contact->fetchAllByUser($_SESSION['id']);
+
     //Getting Data from submit
     if (isset($_POST['contact_create'])){
 
@@ -14,9 +17,10 @@
 
     //checking if inputs were filled
     if (!empty($contactText) && !empty($contactName) && !empty($contactAddress) && !empty($contactEmail)){
-
+        if (!$allContacts){
         //creating new contact in database
         $contact->createContact($contactText,$contactName,$contactAddress,$contactEmail,$_SESSION['id']);
+        }
     }
 
     //reloading page
@@ -28,7 +32,7 @@
 
 
     <section class="admin-content">
-        <h3 class="admin__heading">Contact Customize</h3>
+        <h3 class="admin__heading">Contact Customize - Maximum 1</h3>
 
         <div class="container-content">
         <form action="" method="post" enctype="multipart/form-data" class="form-contact form--hero">
@@ -43,10 +47,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="contact_create">
         </form>
 
-            <?php //Fetching contact data
-            $allContacts = $contact->fetchAllByUser($_SESSION['id']);
-            if ($allContacts){
-            ?>
+            <?php if ($allContacts){ ?>
         <table class="admin-content__table">
             <tr>
                 <th>Contact Text</th>

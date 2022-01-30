@@ -4,6 +4,9 @@
       //Instantiating Hero
       $hero = new Hero();
 
+      $allHero = $hero->fetchAllByUser($_SESSION['id']);
+
+
       //Getting data from submit
       if (isset($_POST['hero_create'])){
 
@@ -16,12 +19,14 @@
 
           //Checking if inputs were filled
           if (!empty($heroText) && !empty($heroButtonText) && !empty($heroCV) && !empty($heroPhoto)){
+              if (!$allHero){
               //Moving files to folder
               move_uploaded_file($heroPhototmp,"assets/hero_files/".$heroPhoto);
               move_uploaded_file($heroCVtmp,"assets/hero_files/".$heroCV);
 
               //Creating new hero in database
               $hero->createHero($heroText,$heroButtonText,$heroCV,$heroPhoto,$_SESSION['id']);
+              }
           }
 
           //Reloading Page
@@ -31,7 +36,7 @@
 
 
     <section class="admin-content">
-        <h3 class="admin__heading">Hero Customize</h3>
+        <h3 class="admin__heading">Hero Customize - Maximum 1</h3>
 
         <div class="container-content">
         <form action="" method="post" enctype="multipart/form-data" class="form-contact form--hero">
@@ -46,10 +51,7 @@
             <input type="submit" value="Create" class="btn form-contact__btn" name="hero_create">
         </form>
 
-         <?php
-        $allHero = $hero->fetchAllByUser($_SESSION['id']);
-        if ($allHero){
-            ?>
+         <?php if ($allHero){ ?>
         <table class="admin-content__table">
             <tr>
                 <th>Hero Text</th>

@@ -4,6 +4,9 @@ require_once "include/navbar.php";
 //Instantiating Footer
 $footer = new Footer();
 
+//Fetching footer data
+$allFooters = $footer->fetchAllByUser($_SESSION['id']);
+
 //Getting data from submit
 if (isset($_POST['footer_create'])) {
 
@@ -14,9 +17,10 @@ if (isset($_POST['footer_create'])) {
 
     //Checking if inputs were filled
     if (!empty($footerText) && !empty($footerFb) && !empty($footerInsta) && !empty($footerGithub)) {
-
-        //Creating footer in database
-        $footer->createFooter($footerText, $footerFb, $footerInsta, $footerGithub,$_SESSION['id']);
+        if (!$allFooters){
+            //Creating footer in database
+            $footer->createFooter($footerText, $footerFb, $footerInsta, $footerGithub,$_SESSION['id']);
+        }
     }
 
     //Reloading page
@@ -26,7 +30,7 @@ if (isset($_POST['footer_create'])) {
 
 
     <section class="admin-content">
-        <h3 class="admin__heading">Footer Customize</h3>
+        <h3 class="admin__heading">Footer Customize - Maximum 1</h3>
 
         <div class="container-content">
         <form action="" method="post" enctype="multipart/form-data" class="form-contact form--hero">
@@ -41,10 +45,7 @@ if (isset($_POST['footer_create'])) {
             <input type="submit" value="Create" class="btn form-contact__btn" name="footer_create">
         </form>
 
-            <?php //Fetching footer data
-            $allFooters = $footer->fetchAllByUser($_SESSION['id']);
-                if ($allFooters){
-            ?>
+            <?php if ($allFooters){ ?>
         <table class="admin-content__table">
             <tr>
                 <th>Footer Text</th>

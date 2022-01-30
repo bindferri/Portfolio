@@ -1,6 +1,6 @@
 <?php require_once "admin/include/init.php";
     $hero = new Hero();
-    $heroResult = $hero->fetchSingle(45);
+    $heroResult = $hero->fetchSingle(51);
 ?>
 <!doctype html>
 <html lang="en">
